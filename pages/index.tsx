@@ -72,6 +72,22 @@ const HomePage = ({props}) => {
                         Textures
                     </Link>
                 </motion.li>
+                <motion.li 
+                    key={"/table"}
+                    layoutId={"/table"}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    whileHover={{
+                        scale: 1.2
+                    }}
+                    variants={growBox}
+                    className="h-32 w-32 grid place-items-center no-underline p-3 bg-yellow-300 hover:bg-yellow-400 rounded-xl border-none outline-none cursor-pointer text-white text-lg shadow"
+                >
+                    <Link href="/table" as="/table">
+                        Custom Geometry
+                    </Link>
+                </motion.li>
             </ul>
         </div>
     )
